@@ -1,0 +1,15 @@
+install kubernetes tools
+
+1. brew installed
+2.   brew install kubernetes-helm
+ 
+   helm is package manager for k8s and our client tool. we use helm cli to do all our commands. 
+3. Tiller is the service that actually communicates with the Kubernetes API to manage our Helm packages
+.
+4. First lets make sure we’re pointed at your local minikube instance: $ kubectl config view
+5. helm init
+6. kubectl describe deploy tiller-deploy --namespace=kube-system
+7. tiller setup and deployed to minikube to interact with the k8s api
+8. 
+Tiller setup and deployed to minikube to interact with the k8s api
+
